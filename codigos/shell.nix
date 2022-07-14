@@ -18,7 +18,7 @@ mkShell {
     python-with-my-packages
     gfortran
     fortran-fpm
-    #notepadqq
+    notepadqq
   ];
 
   shellHooks = ''

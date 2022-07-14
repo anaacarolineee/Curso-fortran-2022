@@ -9,6 +9,11 @@
      integer:: io
 
      ! Leia aqui o arquivo binario model-375.cwp
+	 open(newunit=io, file="model-375.cwp", access="stream",&
+	status="old", action="read")
+	read(io) A
+	close(io)
+	
 
      !plot it:
      call plt%initialize(grid=.true.,xlabel='N', ylabel='M', &

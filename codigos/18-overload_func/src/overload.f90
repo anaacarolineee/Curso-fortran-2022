@@ -5,6 +5,10 @@ module add_mod
 
     ! Escreva aqui a interface para as duas funções
 
+	interface add
+		procedure add_int, add_char
+	end interface add
+
 contains
 
     pure function add_int( x, y )

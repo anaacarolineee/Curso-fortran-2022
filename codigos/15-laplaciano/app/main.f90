@@ -15,6 +15,7 @@
     read(io) A
     close(io)
 
+
     !plot it:
     call plt%initialize(grid=.true.,xlabel='N', ylabel='M', &
                         title='Plot of $A$',legend=.true.)

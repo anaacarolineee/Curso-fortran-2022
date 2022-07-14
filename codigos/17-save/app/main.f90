@@ -8,4 +8,12 @@ program main
 contains
 
     ! Escrever subrotina com argumento save para um inteiro e o incrementa a cada call da subrotina, imprimindo na tela o resultado
+	subroutine f()
+		implicit none
+		integer, save :: i = 0
+		
+		i = i + 1
+		print *, "value i:", i
+	end subroutine f
+	
 end program main

@@ -11,4 +11,12 @@ program aprendendoIO
       & status="replace", action="write")
     write(io, *) v(:,:)
     close(io)
+	
+	open(newunit=io, file="log.txt", status="old", action="read")
+	read(io, *) v(:,:)
+	close(io)
+	print*, v(1,:)
+	print*, v(2,:)
+
+	
 end program aprendendoIO
